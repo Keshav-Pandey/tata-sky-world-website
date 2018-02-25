@@ -8,12 +8,6 @@ body {
   color: #5a5a5a;
 }
 
-.section-header{
-  bottom: -5rem;
-  position: relative;
-  z-index: 10;
-}
-
 .title-header{
   color:rgba(63, 63, 219, 0.74);
 }
