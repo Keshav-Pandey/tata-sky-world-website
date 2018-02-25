@@ -43,14 +43,14 @@
     </header>
 
     <main role="main">
-      <div class="container-fluid">
+      <div class="container-fluid" style="margin-bottom:2rem;">
         <div class="row">
             <div class="col-md-5" style="top:1rem;">
                 <h2 class="featurette-heading">Tata Sky World</h2>
                 <p class="lead">Such Wonder. Much Wow</p>
             </div>
             <div class="col-md-7">
-                <div class='dnSlide-main'>
+                <div class='dnSlide-main' id="mainCarousel">
                     <img src="images/sea/sea-1.jpg" width="100%">
                     <img src="images/sea/sea-2.jpg" width="100%">
                     <img src="images/sea/sea-3.jpg" width="100%">
@@ -62,77 +62,9 @@
             </div>
         </div>
       </div>
-        
-      <div id="myCarousel" class="carousel slide" data-ride="carousel">
-        <ol class="carousel-indicators">
-          <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
-          <li data-target="#myCarousel" data-slide-to="1"></li>
-          <li data-target="#myCarousel" data-slide-to="2"></li>
-        </ol>
-        <div class="carousel-inner">
-          <div class="carousel-item active">
-            <img class="first-slide" src="data:image/gif;base64,R0lGODlhAQABAIAAAHd3dwAAACH5BAAAAAAALAAAAAABAAEAAAICRAEAOw==" alt="First slide">
-            <div class="container">
-                <div class="row featurette carousel-caption">
-                    <div class="col-md-7">
-                      <h2 class="featurette-heading">First featurette heading.</h2>
-                      <p class="lead">Donec ullamcorper nulla non metus auctor fringilla. Vestibulum id ligula porta felis euismod semper. Praesent commodo cursus magna, vel scelerisque nisl consectetur. Fusce dapibus, tellus ac cursus commodo.</p>
-                    </div>
-                    <div class="col-md-5">
-                        <div class='dnSlide-main'>
-                            <img src="images/web-front/web-1.jpg" width="100%">
-                            <img src="images/web-front/web-2.jpg" width="100%">
-                            <img src="images/web-front/web-3.jpg" width="100%">
-                        </div>
-                    </div>
-                  </div>
-            </div>
-          </div>
-          <div class="carousel-item">
-            <img class="second-slide" src="data:image/gif;base64,R0lGODlhAQABAIAAAHd3dwAAACH5BAAAAAAALAAAAAABAAEAAAICRAEAOw==" alt="Second slide">
-            <div class="container">
-                <div class="row featurette carousel-caption">
-                    <div class="col-md-7">
-                      <h2 class="featurette-heading">First featurette heading.</h2>
-                      <p class="lead">Donec ullamcorper nulla non metus auctor fringilla. Vestibulum id ligula porta felis euismod semper. Praesent commodo cursus magna, vel scelerisque nisl consectetur. Fusce dapibus, tellus ac cursus commodo.</p>
-                    </div>
-                    <div class="col-md-5">
-                        <div class='dnSlide-main'>
-                            <img src="images/web-front/web-2.jpg" width="100%">
-                            <img src="images/web-front/web-3.jpg" width="100%">
-                            <img src="images/web-front/web-1.jpg" width="100%">
-                        </div>
-                    </div>
-                  </div>
-            </div>
-          </div>
-          <div class="carousel-item">
-            <img class="third-slide" src="data:image/gif;base64,R0lGODlhAQABAIAAAHd3dwAAACH5BAAAAAAALAAAAAABAAEAAAICRAEAOw==" alt="Third slide">
-            <div class="container">
-                <div class="row featurette carousel-caption">
-                    <div class="col-md-7">
-                      <h2 class="featurette-heading">First featurette heading.</h2>
-                      <p class="lead">Donec ullamcorper nulla non metus auctor fringilla. Vestibulum id ligula porta felis euismod semper. Praesent commodo cursus magna, vel scelerisque nisl consectetur. Fusce dapibus, tellus ac cursus commodo.</p>
-                    </div>
-                    <div class="col-md-5">
-                      <img class="featurette-image img-fluid mx-auto" data-src="holder.js/500x500/auto" alt="Generic placeholder image">
-                    </div>
-                  </div>
-            </div>
-          </div>
-        </div>
-        <a class="carousel-control-prev" href="#myCarousel" role="button" data-slide="prev">
-          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-          <span class="sr-only">Previous</span>
-        </a>
-        <a class="carousel-control-next" href="#myCarousel" role="button" data-slide="next">
-          <span class="carousel-control-next-icon" aria-hidden="true"></span>
-          <span class="sr-only">Next</span>
-        </a>
-      </div>
 
       <!--- Subscribe Now -->
-      <div class="container" style="padding-bottom:50px;">
+      <div class="container-fluid seriesCarouselItem" style="padding-bottom:50px;">
         <h1 class="text-center">Subscribe now</h1>
         <br/>
         <form>
@@ -157,147 +89,162 @@
       </div>
       
       <!-- Movies -->
-      <h1 class="text-center">Movies</h1>
-      <div id="moviesCarousel" class="carousel slide" data-ride="carousel">
-          <ol class="carousel-indicators">
-            <li data-target="#moviesCarousel" data-slide-to="0" class="active"></li>
-            <li data-target="#moviesCarousel" data-slide-to="1"></li>
-            <li data-target="#moviesCarousel" data-slide-to="2"></li>
-          </ol>
-          <div class="carousel-inner">
-            <div class="carousel-item active">
-              <!-- <img class="first-slide img-skew" src="data:image/gif;base64,R0lGODlhAQABAIAAAHd3dwAAACH5BAAAAAAALAAAAAABAAEAAAICRAEAOw==" alt="First slide"> -->
-              <div class="container">
+      <div>
+        <h1 class="text-center">Movies</h1>
+        <div id="moviesCarousel" class="carousel slide" data-ride="carousel">
+            <ol class="carousel-indicators">
+              <li data-target="#moviesCarousel" data-slide-to="0" class="active"></li>
+              <li data-target="#moviesCarousel" data-slide-to="1"></li>
+              <li data-target="#moviesCarousel" data-slide-to="2"></li>
+            </ol>
+            <div class="carousel-inner">
+              <div class="carousel-item active">
+                <div class="container">
                   <div class="row featurette carousel-caption">
-                      <div class="col-md-7">
-                        <h2 class="featurette-heading">First Movie.</h2>
-                        <p class="lead">Donec ullamcorper nulla non metus auctor fringilla. Vestibulum id ligula porta felis euismod semper. Praesent commodo cursus magna, vel scelerisque nisl consectetur. Fusce dapibus, tellus ac cursus commodo.</p>
+                      <div class="col-md-6">
+                        <div class="carousel-caption content-color">
+                            <h2 class=" featurette-heading title-header">Inception (2012)</h2>
+                            <h3 class="title-header">Christopher Nolan</h3>
+                            <p class="text-left">Dom Cobb is a skilled thief, the absolute best in the dangerous art of extraction, stealing valuable secrets from deep within the subconscious during the dream state, when the mind is at its most vulnerable.</p>
+                            <b>Rating</b>
+                          </div>
                       </div>
-                      <div class="col-md-5">
-                          <div id="container">  
-                              <div id="sidebar"></div>
-                              <div id="content">
-                                <div id="carousel-img-1"><img src="images/sea/sea-1.jpg" width="300" height="300" /></div>
-                                <div id="carousel-img-2"><img src="images/sea/sea-2.jpg" width="300" height="300" /></div>
-                                <div id="carousel-img-3"><img src="images/sea/sea-3.jpg" width="300" height="300" /></div>
-                              </div>
-                            </div> 
+                      <div class="col-md-6">
+                          <div id="carousel-img-1"><img class="carousel-img-1" src="images/sea/sea-3.jpg" /></div>
+                          <div id="carousel-img-2"><img class="carousel-img-2" src="images/sea/sea-2.jpg" /></div>
+                          <div id="carousel-img-3"><img class="carousel-img-3" src="images/sea/sea-1.jpg" /></div>
+                      </div>
+                  </div>
+                </div>
+              </div>
+              <div class="carousel-item">
+                  <div class="container">
+                    <div class="row featurette carousel-caption">
+                        <div class="col-md-6">
+                          <div class="carousel-caption content-color">
+                            <h2 class=" featurette-heading title-header">Inception (2012)</h2>
+                            <h3 class="title-header">Christopher Nolan</h3>
+                            <p class="text-left">Dom Cobb is a skilled thief, the absolute best in the dangerous art of extraction, stealing valuable secrets from deep within the subconscious during the dream state, when the mind is at its most vulnerable.</p>
+                            <b>Rating</b>
+                          </div>
+                        </div>
+                        <div class="col-md-6">
+                            <div id="carousel-img-1"><img class="carousel-img-1" src="images/sea/sea-2.jpg" /></div>
+                            <div id="carousel-img-2"><img class="carousel-img-2" src="images/sea/sea-1.jpg" /></div>
+                            <div id="carousel-img-3"><img class="carousel-img-3" src="images/sea/sea-3.jpg" /></div>
+                        </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="carousel-item">
+                    <div class="container">
+                      <div class="row featurette carousel-caption">
+                          <div class="col-md-6">
+                            <div class="carousel-caption content-color">
+                                <h2 class=" featurette-heading title-header">Inception (2012)</h2>
+                                <h3 class="title-header">Christopher Nolan</h3>
+                                <p class="text-left">Dom Cobb is a skilled thief, the absolute best in the dangerous art of extraction, stealing valuable secrets from deep within the subconscious during the dream state, when the mind is at its most vulnerable.</p>
+                                <b>Rating</b>
+                            </div>
+                          </div>
+                          <div class="col-md-6">
+                              <div id="carousel-img-1"><img class="carousel-img-1" src="images/sea/sea-1.jpg" /></div>
+                              <div id="carousel-img-2"><img class="carousel-img-2" src="images/sea/sea-2.jpg" /></div>
+                              <div id="carousel-img-3"><img class="carousel-img-3" src="images/sea/sea-3.jpg" /></div>
+                          </div>
                       </div>
                     </div>
-              </div>
-            </div>
-            <div class="carousel-item">
-              <img class="second-slide" src="data:image/gif;base64,R0lGODlhAQABAIAAAHd3dwAAACH5BAAAAAAALAAAAAABAAEAAAICRAEAOw==" alt="Second slide">
-              <div class="container">
-                  <div class="row featurette carousel-caption">
-                      <div class="col-md-7">
-                        <h2 class="featurette-heading">First featurette heading.</h2>
-                        <p class="lead">Donec ullamcorper nulla non metus auctor fringilla. Vestibulum id ligula porta felis euismod semper. Praesent commodo cursus magna, vel scelerisque nisl consectetur. Fusce dapibus, tellus ac cursus commodo.</p>
-                      </div>
-                      <div class="col-md-5">
-                        <img class="featurette-image img-fluid mx-auto img-skew" data-src="holder.js/500x500/auto" alt="Generic placeholder image">
-                      </div>
-                    </div>
-              </div>
-            </div>
-            <div class="carousel-item">
-              <img class="third-slide" src="data:image/gif;base64,R0lGODlhAQABAIAAAHd3dwAAACH5BAAAAAAALAAAAAABAAEAAAICRAEAOw==" alt="Third slide">
-              <div class="container">
-                  <div class="row featurette carousel-caption">
-                      <div class="col-md-7">
-                        <h2 class="featurette-heading">First featurette heading.</h2>
-                        <p class="lead">Donec ullamcorper nulla non metus auctor fringilla. Vestibulum id ligula porta felis euismod semper. Praesent commodo cursus magna, vel scelerisque nisl consectetur. Fusce dapibus, tellus ac cursus commodo.</p>
-                      </div>
-                      <div class="col-md-5">
-                        <img class="featurette-image img-fluid mx-auto img-skew" data-src="holder.js/500x500/auto" alt="Generic placeholder image">
-                      </div>
-                    </div>
-              </div>
-            </div>
+                  </div>
+            <a class="carousel-control-prev" href="#moviesCarousel" role="button" data-slide="prev">
+              <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+              <span class="sr-only">Previous</span>
+            </a>
+            <a class="carousel-control-next" href="#moviesCarousel" role="button" data-slide="next">
+              <span class="carousel-control-next-icon" aria-hidden="true"></span>
+              <span class="sr-only">Next</span>
+            </a>
           </div>
-          <a class="carousel-control-prev" href="#moviesCarousel" role="button" data-slide="prev">
-            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-            <span class="sr-only">Previous</span>
-          </a>
-          <a class="carousel-control-next" href="#moviesCarousel" role="button" data-slide="next">
-            <span class="carousel-control-next-icon" aria-hidden="true"></span>
-            <span class="sr-only">Next</span>
-          </a>
         </div>
-
-        <p>Sea Animals</p>
-        <div class='dnSlide-main'>
-            <img src="images/sea/sea-1.jpg" width="100%">
-            <img src="images/sea/sea-2.jpg" width="100%">
-            <img src="images/sea/sea-3.jpg" width="100%">
-            <img src="images/sea/sea-4.jpg" width="100%">
-            <img src="images/sea/sea-5.jpg" width="100%">
-            <img src="images/sea/sea-6.jpg" width="100%">
-            <img src="images/sea/sea-7.jpg" width="100%">
-        </div>
-        
+      </div>
       
       <!-- Series -->
-      <h1 class="text-center">Series</h1>
-      <div id="seriesCarousel" class="carousel slide" data-ride="carousel">
-          <ol class="carousel-indicators">
-            <li data-target="#seriesCarousel" data-slide-to="0" class="active"></li>
-            <li data-target="#seriesCarousel" data-slide-to="1"></li>
-            <li data-target="#seriesCarousel" data-slide-to="2"></li>
-          </ol>
-          <div class="carousel-inner">
-            <div class="carousel-item active">
-              <!-- <img class="first-slide img-skew" src="data:image/gif;base64,R0lGODlhAQABAIAAAHd3dwAAACH5BAAAAAAALAAAAAABAAEAAAICRAEAOw==" alt="First slide"> -->
-              <div class="container">
+      <div>
+        <h1 class="text-center section-header">Series</h1>
+        <div id="seriesCarousel" class="carousel slide" data-ride="carousel">
+            <ol class="carousel-indicators">
+              <li data-target="#seriesCarousel" data-slide-to="0" class="active"></li>
+              <li data-target="#seriesCarousel" data-slide-to="1"></li>
+              <li data-target="#seriesCarousel" data-slide-to="2"></li>
+            </ol>
+            <div class="carousel-inner">
+              <div class="carousel-item seriesCarouselItem active">
+                <div class="container">
                   <div class="row featurette carousel-caption">
-                      <div class="col-md-7">
-                        <h2 class="featurette-heading">First Series.</h2>
-                        <p class="lead">Donec ullamcorper nulla non metus auctor fringilla. Vestibulum id ligula porta felis euismod semper. Praesent commodo cursus magna, vel scelerisque nisl consectetur. Fusce dapibus, tellus ac cursus commodo.</p>
+                      <div class="col-md-6">
+                        <div class="carousel-caption content-color-2">
+                            <h2 class=" featurette-heading title-header-2">Inception (2012)</h2>
+                            <h3 class="title-header-2">Christopher Nolan</h3>
+                            <p class="text-left">Dom Cobb is a skilled thief, the absolute best in the dangerous art of extraction, stealing valuable secrets from deep within the subconscious during the dream state, when the mind is at its most vulnerable.</p>
+                            <b>Rating</b>
+                        </div>
                       </div>
-                      <div class="col-md-5">
-                        <img class="featurette-image img-fluid mx-auto img-skew" data-src="holder.js/500x500/auto" alt="Generic placeholder image">
+                      <div class="col-md-6">
+                          <div id="carousel-img-1"><img class="carousel-img-1" src="images/sea/sea-3.jpg" /></div>
+                          <div id="carousel-img-2"><img class="carousel-img-2" src="images/sea/sea-2.jpg" /></div>
+                          <div id="carousel-img-3"><img class="carousel-img-3" src="images/sea/sea-1.jpg" /></div>
+                      </div>
+                  </div>
+                </div>
+              </div>
+              <div class="carousel-item seriesCarouselItem">
+                  <div class="container">
+                    <div class="row featurette carousel-caption">
+                        <div class="col-md-6">
+                          <div class="carousel-caption content-color-2">
+                              <h2 class=" featurette-heading title-header-2">Inception (2012)</h2>
+                              <h3 class="title-header-2">Christopher Nolan</h3>
+                              <p class="text-left">Dom Cobb is a skilled thief, the absolute best in the dangerous art of extraction, stealing valuable secrets from deep within the subconscious during the dream state, when the mind is at its most vulnerable.</p>
+                              <b>Rating</b>
+                          </div>
+                        </div>
+                        <div class="col-md-6">
+                            <div id="carousel-img-1"><img class="carousel-img-1" src="images/sea/sea-3.jpg" /></div>
+                            <div id="carousel-img-2"><img class="carousel-img-2" src="images/sea/sea-2.jpg" /></div>
+                            <div id="carousel-img-3"><img class="carousel-img-3" src="images/sea/sea-1.jpg" /></div>
+                        </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="carousel-item seriesCarouselItem">
+                    <div class="container">
+                      <div class="row featurette carousel-caption">
+                          <div class="col-md-6">
+                            <div class="carousel-caption content-color-2">
+                                <h2 class=" featurette-heading title-header-2">Inception (2012)</h2>
+                                <h3 class="title-header-2">Christopher Nolan</h3>
+                                <p class="text-left">Dom Cobb is a skilled thief, the absolute best in the dangerous art of extraction, stealing valuable secrets from deep within the subconscious during the dream state, when the mind is at its most vulnerable.</p>
+                                <b>Rating</b>
+                            </div>
+                          </div>
+                          <div class="col-md-6">
+                              <div id="carousel-img-1"><img class="carousel-img-1" src="images/sea/sea-3.jpg" /></div>
+                              <div id="carousel-img-2"><img class="carousel-img-2" src="images/sea/sea-2.jpg" /></div>
+                              <div id="carousel-img-3"><img class="carousel-img-3" src="images/sea/sea-1.jpg" /></div>
+                          </div>
                       </div>
                     </div>
-              </div>
-            </div>
-            <div class="carousel-item">
-              <img class="second-slide" src="data:image/gif;base64,R0lGODlhAQABAIAAAHd3dwAAACH5BAAAAAAALAAAAAABAAEAAAICRAEAOw==" alt="Second slide">
-              <div class="container">
-                  <div class="row featurette carousel-caption">
-                      <div class="col-md-7">
-                        <h2 class="featurette-heading">First featurette heading.</h2>
-                        <p class="lead">Donec ullamcorper nulla non metus auctor fringilla. Vestibulum id ligula porta felis euismod semper. Praesent commodo cursus magna, vel scelerisque nisl consectetur. Fusce dapibus, tellus ac cursus commodo.</p>
-                      </div>
-                      <div class="col-md-5">
-                        <img class="featurette-image img-fluid mx-auto img-skew" data-src="holder.js/500x500/auto" alt="Generic placeholder image">
-                      </div>
-                    </div>
-              </div>
-            </div>
-            <div class="carousel-item">
-              <img class="third-slide" src="data:image/gif;base64,R0lGODlhAQABAIAAAHd3dwAAACH5BAAAAAAALAAAAAABAAEAAAICRAEAOw==" alt="Third slide">
-              <div class="container">
-                  <div class="row featurette carousel-caption">
-                      <div class="col-md-7">
-                        <h2 class="featurette-heading">First featurette heading.</h2>
-                        <p class="lead">Donec ullamcorper nulla non metus auctor fringilla. Vestibulum id ligula porta felis euismod semper. Praesent commodo cursus magna, vel scelerisque nisl consectetur. Fusce dapibus, tellus ac cursus commodo.</p>
-                      </div>
-                      <div class="col-md-5">
-                        <img class="featurette-image img-fluid mx-auto img-skew" data-src="holder.js/500x500/auto" alt="Generic placeholder image">
-                      </div>
-                    </div>
-              </div>
-            </div>
+                  </div>
+            <a class="carousel-control-prev" href="#seriesCarousel" role="button" data-slide="prev">
+              <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+              <span class="sr-only">Previous</span>
+            </a>
+            <a class="carousel-control-next" href="#seriesCarousel" role="button" data-slide="next">
+              <span class="carousel-control-next-icon" aria-hidden="true"></span>
+              <span class="sr-only">Next</span>
+            </a>
           </div>
-          <a class="carousel-control-prev" href="#seriesCarousel" role="button" data-slide="prev">
-            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-            <span class="sr-only">Previous</span>
-          </a>
-          <a class="carousel-control-next" href="#seriesCarousel" role="button" data-slide="next">
-            <span class="carousel-control-next-icon" aria-hidden="true"></span>
-            <span class="sr-only">Next</span>
-          </a>
         </div>
+      </div>
 
         <!-- Brands -->
         <h1 class="text-center">Brands</h1>
@@ -367,37 +314,38 @@
     <script src="js/dnSlide.js"></script>
     <script src="js/expandJS.js"></script>
     <script>
+      // Function to switch the text of the series carousel
+      function switchSeriesText(i){
+        console.log("Series" + i);
+      }
+
+      // Function to switch the text of the series carousel
+      function switchMoviesText(i){
+        console.log("Movies" + i);
+      }
 
         jQuery(document).ready(function($) {
     
             $(".dnSlide-main").each(function(index, el) {
                 var setting = {
-                    "response" : true
+                    "response"      : true,
+                    "precentWidth"  : "70%",
+                    "switching"     : "normal",
+                    "verticalAlign" : "top",
+                    "afterClickBtnFn" : function(){}
                 };
                 switch (index) {
-                  case 0:
-                    setting.verticalAlign = "top" ;
-                    setting.switching     = "custom" ;
-                    setting.precentWidth  = "50%" ;
-                    var api = $(el).dnSlide(setting).data( "dnSlide" );
-                    break;
                   case 1:
-                    setting.verticalAlign = "top" ;
-                    setting.switching     = "custom" ;
-                    setting.precentWidth  = "50%" ;
+                    setting.afterClickBtnFn = switchMoviesText;
                     var api = $(el).dnSlide(setting).data( "dnSlide" );
                     break;
-                  case 6:
-                      setting.autoPlay  =  true ;
-                      $(el).dnSlide(setting);
-                      break;
-                  case 7:
-                      setting.verticalAlign = "bottom" ;
-                      $(el).dnSlide(setting);
-                      break;
-                    default:
-                        $(el).dnSlide(setting);
-                        break;
+                  case 2:
+                    setting.afterClickBtnFn = switchSeriesText;
+                    var api = $(el).dnSlide(setting).data( "dnSlide" );
+                    break;
+                  default:
+                    $(el).dnSlide(setting);
+                    break;
                 }
             });
         });

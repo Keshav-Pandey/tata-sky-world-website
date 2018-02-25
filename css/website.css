@@ -8,6 +8,30 @@ body {
   color: #5a5a5a;
 }
 
+.section-header{
+  bottom: -5rem;
+  position: relative;
+  z-index: 10;
+}
+
+.title-header{
+  color:rgba(63, 63, 219, 0.74);
+}
+
+.title-header-2{
+  color:rgba(63, 63, 219, 0.74);
+}
+
+.content-color{
+  color:rgba(63, 63, 219, 0.74);
+  font-weight: 500;
+}
+
+.content-color-2{
+  color:rgba(20, 134, 68, 0.562);
+  font-weight: 500;
+}
+
 /* CUSTOMIZE THE CAROUSEL
 -------------------------------------------------- */
 
@@ -24,7 +48,7 @@ body {
 /* Declare heights because of positioning of img element */
 .carousel-item {
   height: 32rem;
-  background-color: #777;
+ 
 }
 .carousel-item > img {
   position: absolute;
@@ -40,31 +64,57 @@ body {
   padding-top:100px;
 }
 
+.carousel-img-1 {
+  width: 16rem;
+  height: 16rem;
+  border-width: 5px;
+  border-style: solid;
+  border-image: linear-gradient(to top right, #f00c0c, #7e2070);
+  border-image-slice: 1;
+}
+
+.carousel-img-2 {
+  width: 12rem;
+  height: 12rem;
+  border-width: 5px;
+  border-style: solid;
+  border-image: linear-gradient(to top right, #f00c0c, #7e2070);
+  border-image-slice: 1;
+}
+
+.carousel-img-3 {
+  width: 8rem;
+  height: 8rem;
+  border-width: 5px;
+  border-style: solid;
+  border-image: linear-gradient(to top right, #f00c0c, #7e2070);
+  border-image-slice: 1;
+}
+
 #carousel-img-1 {
   position:absolute;  
-  z-index:auto;
-  left:250px;
-  top:125px;
+  z-index:3;
+  left:10rem;
+  bottom:2.5rem;
+  transform: skewY(5deg);
   }
 #carousel-img-2 {
   position:absolute;  
-  z-index:1;  
-  left:125px;
+  z-index:2;  
+  left:5rem;
+  bottom:4rem;
+  transform: skewY(8deg);
   }
 #carousel-img-3 {
   position:absolute;
-  z-index:2;
+  z-index:1;
+  bottom:6rem;
+  transform: skewY(10deg);
   }
 
-.ui-coverflow-wrapper{
-  height:400px;
-  margin-top: 100px;
+.seriesCarouselItem {
+  background-image: linear-gradient(to bottom right, #7e2070, #40348f) !important;
 }
-.ui-state-active{
-  border:0px;
-}
-
-
 /* Featurettes
 ------------------------- */
 
@@ -94,10 +144,12 @@ body {
   .featurette-heading {
     font-size: 50px;
   }
+
 }
 
 @media (min-width: 62em) {
   .featurette-heading {
     margin-top: 7rem;
   }
+
 }
