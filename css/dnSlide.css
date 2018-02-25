@@ -58,6 +58,11 @@
   position: absolute;
   top: 0px;
   left: 0px;
+  border-width: 3px;
+  border-style: solid;
+  border-image: linear-gradient(to top right, #f00c0c, #7e2070);
+  border-image-slice: 1;
+  transform: skewY(5deg);
 }
 .dnSlide-main .dnSlide-left-btn {
   background-image: url("../images/left.svg");
