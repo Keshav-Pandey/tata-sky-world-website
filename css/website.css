@@ -193,6 +193,40 @@ body {
 }
 
 
+/* FOOTER */
+
+#footer .footer-link a {
+    text-transform: uppercase;
+    font-size: 18px;
+    font-family: Sky-Medium;
+    background: -webkit-linear-gradient(right, rgba(0, 71, 153, 1) 25%, rgba(183, 8, 128, 1) 56%, rgba(227, 0, 15, 1) 53%, rgba(239, 123, 0, 1) 93%);
+    background: linear-gradient(to left, rgba(0, 71, 153, 1) 25%, rgba(183, 8, 128, 1) 56%, rgba(227, 0, 15, 1) 53%, rgba(239, 123, 0, 1) 93%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    font-weight: bold;
+}
+
+.social-icons .fa {
+    color: #000000;
+    font-size: 22px;
+    cursor: pointer;
+}
+
+#footer .social-icons a {
+    padding: 10px;
+}
+
+#footer .copy-rights {
+    color: #000000;
+    font-family: Sky-Regular;
+    padding-bottom: 20px;
+}
+
+.footer-lb {
+    background: linear-gradient(to right, #ff8500, #de0137);
+}
+
+
 /* RESPONSIVE CSS
 -------------------------------------------------- */
 
