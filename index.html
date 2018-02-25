@@ -333,6 +333,7 @@
     <script src="js/holder.min.js"></script>
     <script src="js/dnSlide.js"></script>
     <script src="js/expandJS.js"></script>
+    <script src="js/form/jquery.form-validator.min.js"></script>
     <script>
       // Function to switch the text of the series carousel
       function switchSeriesText(i){
@@ -368,6 +369,20 @@
                     break;
                 }
             });
+            $.validate({
+                form: '#subscribe-form',
+                onError: function($form) {
+                    SmoothScroll();
+                    return false;
+                }
+            });
+
+            function SmoothScroll() {
+                $('html, body').animate({
+                    scrollBottom: 0
+                }, 2000);
+                return false;
+            }
         });
     </script>
 </body>
