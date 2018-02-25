@@ -32,6 +32,29 @@ body {
 /*Custom Button 
 */
 
+.modal-open .modal,
+a:focus {
+    outline: none!important
+}
+
+.image-overlay {
+    position: absolute;
+    top: 5%;
+    left: 7%;
+    z-index: 5;
+}
+
+.thumbnail {
+    position: relative;
+}
+
+.caption {
+    position: absolute;
+    top: 30%;
+    left: 10%;
+    width: 100%;
+}
+
 .btn-tata {
     background-color: #ffffff;
     color: #870e38;

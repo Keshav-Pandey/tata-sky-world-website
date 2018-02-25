@@ -76,23 +76,39 @@
         </ul>
     </div>
     <main role="main">
-        <div class="container-fluid" style="margin-bottom:2rem;">
+        <div class="container-fluid">
             <div class="row">
-                <div class="col-md-4" style="top:1rem;">
-                    <img src="images/p1-left.png" class="img-responsive" alt="well rip" style="max-width:500px;">
+                <div class="col-lg-4">
+                    <img src="images/p1-left.png" class="img-responsive" alt="well rip" style="max-width:500px;width:100%">
                 </div>
-                <div class="col-md-8">
-                    <div class='dnSlide-main' id="mainCarousel">
-                        <img src="images/movies/web-1.jpg" width="100%">
-                        <img src="images/movies/web-2.jpg" width="100%">
-                        <img src="images/movies/web-3.jpg" width="100%">
-                        <img src="images/movies/web-4.jpg" width="100%">
-                        <img src="images/movies/web-5.jpg" width="100%">
-                        <img src="images/movies/web-6.jpg" width="100%">
-                        <img src="images/movies/web-7.jpg" width="100%">
+                <div class="col-lg-8">
+                    <br/>
+                    <div class="thumbnail">
+                        <img src="images/sea/sea-1.jpg" alt="" style="padding-top:50px;padding-left:40px;width:100%">
+                        <a data-toggle="modal" href="#myModal" style="display:block;" class="caption"><img src="dp2.png" class="img-responsive" alt="" style="width:100%;max-width:200px"></a>
+                        <div class="modal fade" id="myModal" role="dialog">
+                            <div class="modal-dialog">
+
+                                <!-- Modal content-->
+                                <div class="modal-content">
+                                    <div class="modal-header">
+                                        <button type="button" class="close" data-dismiss="modal">&times;</button>
+                                    </div>
+                                    <div class="embed-responsive embed-responsive-16by9">
+                                        <iframe class="embed-responsive-item" src="https://www.youtube.com/embed/zpOULjyy-n8?rel=0" allowfullscreen></iframe>
+                                    </div>
+                                </div>
+
+                            </div>
+                        </div>
                     </div>
                 </div>
+                <!-- MODAL -->
+
+
             </div>
+            <br/>
+        </div>
         </div>
 
         <!--- Subscribe Now -->
@@ -103,7 +119,7 @@
                 <h5>Get the service @ 75 per month. Existing Subscribers - Please <a href="">Click Here</a> to subscribe to Tata Sky World Screen.<br> Not a subscriber yet? Fill this form and we will call you back.</h5>
             </div>
             <br/>
-            <form id="subscribe-form">
+            <form id="subscribe-form" class="d-none d-lg-block d-xl-block">
                 <div class="form-row">
                     <div class="col-2">
                         <input type="text" class="form-control" placeholder="Name" data-validation="required alphanumeric length" data-validation-length="4-100" data-validation-allowing="-_.,! " data-validation-error-msg="Please enter name">
@@ -119,11 +135,24 @@
                     </div>
                 </div>
             </form>
+            <form id="subscribe-form2" class="d-lg-none">
+                <div class="row mx-auto py-3">
+                    <input type="text" class="form-control" placeholder="Name" data-validation="required alphanumeric length" data-validation-length="4-100" data-validation-allowing="-_.,! " data-validation-error-msg="Please enter name">
+                </div>
+                <div class="row mx-auto py-3">
+                    <input type="email" class="form-control" placeholder="Example@mail.com" data-validation="required alphanumeric length email" data-validation-length="max100" data-validation-allowing="-_.,!@ " data-validation-error-msg="Please enter email">
+                </div>
+                <div class="row mx-auto py-3">
+                    <input type="number" class="form-control" placeholder="Phone" data-validation-length="10" data-validation="required length number" data-validation-error-msg="Please enter phone number">
+                </div>
+                <div class="row mx-auto py-3">
+                    <button type="submit" class="btn btn-tata text-center" style="min-width:250px">SUBMIT</button>
+                </div>
+            </form>
             <div id="nav-movie">
                 <br/>
                 <br/>
             </div>
-            </form>
         </div>
 
         <!-- Movies -->
@@ -141,7 +170,7 @@
                     </div>
                 </div>
                 <div class="row">
-                    <div class="col-md-6">
+                    <div class="col-lg-6">
                         <div class="content-color">
                             <h2 class=" featurette-heading title-header" id="moviesTitle">Inception (2012)</h2>
                             <h3 class="title-header" id="moviesDirector">Christopher Nolan</h3>
@@ -149,7 +178,7 @@
                             <b>Rating</b>
                         </div>
                     </div>
-                    <div class="col-md-6">
+                    <div class="col-lg-6">
                         <div class='dnSlide-main' id="moviesCarousel">
                             <img src="images/movies/web-1.jpg" width="100%">
                             <img src="images/movies/web-2.jpg" width="100%">
@@ -161,6 +190,7 @@
                         </div>
                     </div>
                 </div>
+                <br/>
             </div>
         </div>
 
@@ -199,10 +229,11 @@
                         </div>
                     </div>
                 </div>
+                <br/>
             </div>
         </div>
 
-        <!-- Brands -->
+        <!-- BLOGS -->
         <h1 class="text-center">Brands</h1>
         <div id="brandCarousel" class="carousel slide" data-ride="carousel">
             <ol class="carousel-indicators">
@@ -228,6 +259,16 @@
                             <h1>Another example headline.</h1>
                             <p>Cras justo odio, dapibus ac facilisis in, egestas eget quam. Donec id elit non mi porta gravida at eget metus. Nullam id dolor id nibh ultricies vehicula ut id elit.</p>
                             <p><a class="btn btn-lg btn-primary" href="#" role="button">Learn more</a></p>
+                        </div>
+                    </div>
+                </div>
+                <div class="carousel-item">
+                    <img class="third-slide" src="data:image/gif;base64,R0lGODlhAQABAIAAAHd3dwAAACH5BAAAAAAALAAAAAABAAEAAAICRAEAOw==" alt="Third slide">
+                    <div class="container">
+                        <div class="carousel-caption text-right">
+                            <h1>One more for good measure.</h1>
+                            <p>Cras justo odio, dapibus ac facilisis in, egestas eget quam. Donec id elit non mi porta gravida at eget metus. Nullam id dolor id nibh ultricies vehicula ut id elit.</p>
+                            <p><a class="btn btn-lg btn-primary" href="#" role="button">Browse gallery</a></p>
                         </div>
                     </div>
                 </div>
@@ -343,6 +384,21 @@
                     $("#seriesDirector").html("Director 1");
                     $("#seriesText").html("How have you not watched this movie again?");
                     break;
+                case 5:
+                    $("#seriesTitle").html("Title 6 (2018)");
+                    $("#seriesDirector").html("Director 1");
+                    $("#seriesText").html("How have you not watched this movie again?");
+                    break;
+                case 6:
+                    $("#seriesTitle").html("Title 7 (2018)");
+                    $("#seriesDirector").html("Director 1");
+                    $("#seriesText").html("How have you not watched this movie again?");
+                    break;
+                case 7:
+                    $("#seriesTitle").html("Title 5 (2018)");
+                    $("#seriesDirector").html("Director 1");
+                    $("#seriesText").html("How have you not watched this movie again?");
+                    break;
             }
         }
 
@@ -374,6 +430,16 @@
                     $("#moviesDirector").html("Director 1");
                     $("#moviesText").html("How have you not watched this movie again?");
                     break;
+                case 3:
+                    $("#moviesTitle").html("Title 6 (2018)");
+                    $("#moviesDirector").html("Director 1");
+                    $("#moviesText").html("How have you not watched this movie again?");
+                    break;
+                case 4:
+                    $("#moviesTitle").html("Title 7 (2018)");
+                    $("#moviesDirector").html("Director 1");
+                    $("#moviesText").html("How have you not watched this movie again?");
+                    break;
             }
         }
 
@@ -387,11 +453,11 @@
                     "afterClickBtnFn": function() {}
                 };
                 switch (index) {
-                    case 1:
+                    case 0:
                         setting.afterClickBtnFn = switchMoviesText;
                         var api = $(el).dnSlide(setting).data("dnSlide");
                         break;
-                    case 2:
+                    case 1:
                         setting.afterClickBtnFn = switchSeriesText;
                         var api = $(el).dnSlide(setting).data("dnSlide");
                         break;
@@ -407,6 +473,13 @@
                     return false;
                 }
             });
+            $.validate({
+                form: '#subscribe-form2',
+                onError: function($form) {
+                    SmoothScroll();
+                    return false;
+                }
+            });
 
             function SmoothScroll() {
                 $('html, body').animate({
@@ -414,6 +487,12 @@
                 }, 2000);
                 return false;
             }
+            $('#myModal').on('hidden.bs.modal', function() {
+                var $this = $(this).find('iframe'),
+                    tempSrc = $this.attr('src');
+                $this.attr('src', "");
+                $this.attr('src', tempSrc);
+            });
         });
     </script>
 </body>
