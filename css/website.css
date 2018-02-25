@@ -8,23 +8,6 @@ body {
   color: #5a5a5a;
 }
 
-  #carousel-img-1 {
-  position:absolute;  
-  z-index:auto;
-  top:250px;
-  left:250px;
-  }
-  #carousel-img-2 {
-  position:absolute;  
-  z-index:1;  
-  left:125px;
-  top:125px;
-  }
-  #carousel-img-3 {
-  position:absolute;
-  z-index:2;
-  }
-
 /* CUSTOMIZE THE CAROUSEL
 -------------------------------------------------- */
 
@@ -57,27 +40,28 @@ body {
   padding-top:100px;
 }
 
+#carousel-img-1 {
+  position:absolute;  
+  z-index:auto;
+  left:250px;
+  top:125px;
+  }
+#carousel-img-2 {
+  position:absolute;  
+  z-index:1;  
+  left:125px;
+  }
+#carousel-img-3 {
+  position:absolute;
+  z-index:2;
+  }
+
 .ui-coverflow-wrapper{
   height:400px;
   margin-top: 100px;
 }
 .ui-state-active{
   border:0px;
-}
-/* MARKETING CONTENT
--------------------------------------------------- */
-
-/* Center align the text within the three columns below the carousel */
-.marketing .col-lg-4 {
-  margin-bottom: 1.5rem;
-  text-align: center;
-}
-.marketing h2 {
-  font-weight: 400;
-}
-.marketing .col-lg-4 p {
-  margin-right: .75rem;
-  margin-left: .75rem;
 }
 
 
