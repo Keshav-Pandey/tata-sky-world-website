@@ -89,12 +89,6 @@
                     _this_.clickCurrentLI($(this).index());
                 });
             }
-
-            if(this.options.switching === "disabled"){
-                this.dnSlideLi.off().on("click",function(){
-                   
-                });
-            }
             
             if(this.options.autoPlay){
                 this.autoPlay();
@@ -253,7 +247,7 @@
                     "width"  : dw,
                     "height" : dh,
                     "zIndex"  : --level, 
-                    "opacity" : 1/(++j),
+                    "opacity" : 0,
                     "left" : optionImgLeft + self_.dnSlideFirstItem.width() + ((++i) * gap ) - dw ,
                     "top"  :  self_.settingVerticalAlign(dh)
                 });
