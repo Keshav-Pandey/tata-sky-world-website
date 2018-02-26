@@ -23,6 +23,21 @@ body {
     font-weight: 500;
 }
 
+.content-color-movies {
+    color: #5087c7;
+    font-weight: 500;
+}
+
+.content-color-series h2 {
+    color: #f8d9d9;
+    font-weight: 500;
+}
+
+.content-color-series {
+    color: #c87f9b;
+    font-weight: 500;
+}
+
 .content-color-2 {
     color: rgba(20, 134, 68, 0.562);
     font-weight: 500;
@@ -31,6 +46,80 @@ body {
 
 /*Custom Button 
 */
+
+
+/*
+Removes white gap between slides
+*/
+
+.carousel {
+    background: white;
+}
+
+.carousel-caption {
+    position: relative;
+    left: auto;
+    right: auto;
+    color: maroon;
+}
+
+
+/*
+  Forces image to be 100% width and not max width of 100%
+  */
+
+.carousel-item .img-fluid {
+    width: 100%;
+    height: auto;
+}
+
+.caption-below {
+    text-align: center;
+}
+
+.caption-below h1 {
+    font: bold large;
+}
+
+.caption-below p {
+    margin-left: 20%;
+    margin-right: 20%;
+    font: small;
+}
+
+
+/* 
+  anchors are inline so you need ot make them block to go full width
+  */
+
+.carousel-item a {
+    display: block;
+    width: 100%;
+}
+
+.carousel-caption {
+    position: relative;
+    left: auto;
+    right: auto;
+}
+
+@media (max-width:600px) {
+    .carousel-inner {
+        padding-bottom: 15px;
+        overflow: visible;
+    }
+}
+
+@media (min-width:600px) {
+    .carousel-inner {
+        padding-bottom: 150px;
+        overflow: visible;
+    }
+}
+
+.carousel-caption {
+    bottom: -125px;
+}
 
 .modal-open .modal,
 a:focus {
@@ -209,6 +298,15 @@ a:focus {
 .navbar-custom .nav-item.active .nav-link,
 .navbar-custom .nav-item:hover .nav-link {
     color: #ffffff;
+}
+
+@media (max-width:992px) {
+    .mv {
+        display: none;
+    }
+    .sr {
+        display: none;
+    }
 }
 
 
